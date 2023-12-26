@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import email from "/assets/email.svg";
 
 function Notify() {
+  const [emailList, setEmailList] = useState("");
+
+  function handleNotifications(event) {
+    setEmailList(event.target.value);
+  }
+
+  console.log(emailList);
   return (
-    <section className="mx-auto bg-primary h-[100vh] flex flex-col justify-center align-middle">
+    <section className=" bg-primary h-[100vh] flex flex-col justify-center align-middle">
       <h1 className="text-neutral-yellow text-4xl font-bold">
         NOTIFY THE LAUNCH
       </h1>
@@ -12,19 +19,19 @@ function Notify() {
         Subscribe to get the latest news about us
       </p>
 
-      <form action="post">
+      <form>
         <div className="mt-5 flex justify-between align-middle bg-white rounded-lg  w-[70%] p-2">
           <div className="flex mt-2">
             <div>
               <img src={email} alt="Email" />
             </div>
-            <div>
+            <div className="w-fit">
               <input
-                className="border-none outline-none"
+                className="border-none outline-none w-fit"
                 type="text"
                 name="email"
-                id="email"
                 placeholder="Enter your Email"
+                onChange={handleNotifications}
               />
             </div>
           </div>

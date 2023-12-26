@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "/assets/logo.svg";
 import menu from "/assets/icon-hamburger.svg";
 
@@ -12,7 +12,9 @@ export default function NavBar() {
   return (
     <header className="flex flex-row justify-between align-middle bg-background text-grey">
       <div className="w-[60px] h-[60px] pt-2 cursor-pointer">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <nav className="relative">
         <div

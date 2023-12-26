@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <section className=" pt-10 bg-primary w-[100%] h-[100vh] flex justify-evenly align-middle lg:flex-row md:flex-col sm:flex-col ">
-      <div>
-        <img src="/assets/home--img.png" alt="Hero Image" />
+    <section className=" pt-10 bg-primary w-[100%] h-fit flex justify-evenly align-middle lg:flex-row md:flex-col sm:flex-col ">
+      <div className="sm:mx-auto">
+        <img src="/assets/home.png" alt="Hero Image" />
       </div>
 
       <div>
@@ -31,7 +31,7 @@ export default function Home() {
         </button>
 
         <div className="p-4 mt-7 bg-light-yellow w-[100%] h-[70px] rounded-lg">
-          <ul className="flex">
+          <ul className="flex mx-auto">
             <li className="ml-8 cursor-pointer ">
               {" "}
               <img src={FaceBook} alt="Social Media Icons" />
