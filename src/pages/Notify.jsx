@@ -20,14 +20,14 @@ function Notify() {
       </p>
 
       <form>
-        <div className="mt-5 flex justify-between align-middle bg-white rounded-lg  w-[70%] p-2">
-          <div className="flex mt-2">
+        <div className="mt-5 flex lg:flex-row md:flex-row sm:flex-col lg:justify-between md:justify-between sm:justify-center align-middle bg-white rounded-lg  w-[70%] p-2">
+          <div className="flex mt-2 w-full">
             <div>
               <img src={email} alt="Email" />
             </div>
-            <div className="w-fit">
+            <div className="w-full">
               <input
-                className="border-none outline-none w-fit"
+                className="border-none outline-none w-full bg-white"
                 type="text"
                 name="email"
                 placeholder="Enter your Email"
@@ -36,7 +36,7 @@ function Notify() {
             </div>
           </div>
           <div>
-            <button className="w-[150px] h-[40px] bg-neutral-yellow text-show-brown rounded-xl">
+            <button className="w-[150px] h-[40px] sm:mt-5 bg-neutral-yellow text-show-brown rounded-xl">
               Register
             </button>
           </div>
