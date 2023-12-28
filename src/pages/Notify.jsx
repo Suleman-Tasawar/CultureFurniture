@@ -10,7 +10,7 @@ function Notify() {
 
   console.log(emailList);
   return (
-    <section className=" bg-primary h-[100vh] flex flex-col justify-center align-middle">
+    <section className=" bg-primary h-[100vh] flex flex-col place-items-center align-middle">
       <h1 className="text-neutral-yellow text-4xl font-bold">
         NOTIFY THE LAUNCH
       </h1>
@@ -20,7 +20,7 @@ function Notify() {
       </p>
 
       <form>
-        <div className="mt-5 flex lg:flex-row md:flex-row sm:flex-col lg:justify-between md:justify-between sm:justify-center align-middle bg-white rounded-lg  w-[70%] p-2">
+        <div className="mt-auto flex lg:flex-row md:flex-row sm:flex-col lg:justify-between md:justify-between  place-items-center align-middle bg-white rounded-lg  w-[90%] p-2">
           <div className="flex mt-2 w-full">
             <div>
               <img src={email} alt="Email" />
@@ -36,7 +36,7 @@ function Notify() {
             </div>
           </div>
           <div>
-            <button className="w-[150px] h-[40px] sm:mt-5 bg-neutral-yellow text-show-brown rounded-xl">
+            <button className="w-[150px] h-[40px] lg:mt-0 md:mt-0 sm:mt-5 bg-neutral-yellow text-show-brown rounded-xl">
               Register
             </button>
           </div>

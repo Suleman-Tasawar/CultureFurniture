@@ -4,7 +4,7 @@ import Arrow from "/assets/Arrow1.svg";
 
 function Navigate() {
   return (
-    <nav className=" mt-3 flex justify-between align-middle">
+    <nav className="bg-primary pt-3 flex justify-between align-middle">
       <div>
         <Link
           to=".."
@@ -14,10 +14,10 @@ function Navigate() {
         </Link>
       </div>
       <div>
-        <button className="hover:bg-neutral-yellow hover:transition w-[150px] h-[35px] bg-light-yellow text-background rounded-full">
+        <button className="hover:bg-neutral-yellow hover:transition w-[150px] h-[30px] bg-light-yellow text-background rounded-full">
           <Link to="/notify">Notify the Launch</Link>
         </button>
-        <button className="hover:bg-light-yellow hover:transition-all  w-[150px] h-[35px] bg-neutral-yellow text-background rounded-full">
+        <button className="hover:bg-light-yellow hover:transition-all  w-[100px] h-[30px] bg-neutral-yellow text-background rounded-full">
           <Link to="/contact">Stay in touch</Link>
         </button>
       </div>

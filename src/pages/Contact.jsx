@@ -19,8 +19,8 @@ function Contact() {
   console.log(form);
   return (
     <section className="bg-green-neutral h-[100vh] flex justify-center">
-      <div className="mt-10  flex lg:flex-row md:flex-col sm:flex-col justify-between align-middle bg-white w-[70%] h-fit  rounded-2xl">
-        <div className="p-3 lg:w-[50%] md:w-[60%] sm:w-[70%] ">
+      <div className="mt-10  flex lg:flex-row md:flex-col sm:flex-col justify-between align-middle bg-white w-[90%] h-fit  rounded-2xl">
+        <div className="p-3 lg:w-[50%] md:w-[60%] sm:w-[90%] ">
           <h1 className="text-4xl font-bold">
             Get in <span className="text-light-yellow ">Touch</span>
           </h1>
@@ -30,7 +30,7 @@ function Contact() {
           </p>
 
           <form>
-            <div className="mt-3 border-border-grey border-[1px] bg-white">
+            <div className="mt-3 border-border-grey border-[1px] bg-white rounded-full">
               <input
                 className="border-none outline-none w-full h-[40px]"
                 type="text"
@@ -40,7 +40,7 @@ function Contact() {
               />
             </div>
 
-            <div className="mt-3 border-border-grey border-[1px] bg-white">
+            <div className="mt-3 border-border-grey border-[1px] bg-white rounded-full">
               <input
                 className="border-none outline-none w-full h-[40px]"
                 type="email"
@@ -50,7 +50,7 @@ function Contact() {
               />
             </div>
 
-            <div className="mt-3 border-border-grey border-[1px] bg-white">
+            <div className="mt-3 border-border-grey border-[1px] bg-white rounded-full">
               <input
                 className="border-none outline-none w-full h-[40px] "
                 type="tel"
@@ -60,7 +60,7 @@ function Contact() {
               />
             </div>
 
-            <div className="  mt-3 w-full h-[40px] border-border-grey border-[1px] bg-white">
+            <div className="  mt-3 w-full h-[40px] border-border-grey border-[1px] bg-white rounded-full">
               <select
                 name="reason"
                 className="border-none outline-none w-full h-[40px]"
@@ -102,7 +102,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-[30%]  bg-primary"></div>
+        <div className="lg:w-[30%] md:w-0 sm:w-0  bg-primary"></div>
       </div>
     </section>
   );
