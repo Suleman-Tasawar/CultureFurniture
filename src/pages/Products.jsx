@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import ProdImg from "/assets/prod--img.png";
 import ProdBed from "/assets/prod--bed.svg";
 import ProdCloset from "/assets/prod--closet.svg";
@@ -21,26 +23,45 @@ export default function Products() {
 
         <div className="text-center lg:mt-0 md:mt-5 sm:mt-5">
           <div className="grid place-items-center lg:grid-cols-2 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-2 sm:grid-rows-4  lg:gap-7 md:gap-3 sm:gap-0 text-center align-middle">
-            <div className=" w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
-              <img className="mx-4" src={ProdSofa} />
-              <h1 className="text-show-brown text-2xl">Sofa</h1>
-            </div>
-            <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
-              <img className="mx-4" src={ProdBed} />
-              <h1 className="text-show-brown text-2xl">Bed</h1>
-            </div>
-            <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
-              <img className="mx-4" src={ProdCloset} />
-              <h1 className="text-show-brown text-2xl">Closet</h1>
-            </div>
-            <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
-              <img className="mx-4" src={ProdTable} />
-              <h1 className="text-show-brown text-2xl">Table</h1>
-            </div>
-            <div className="lg:w-[100px] md:w-[100px] sm:w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer mt-4">
-              <img src={ProdRack} />
-              <h1 className="text-show-brown text-2xl">Rack</h1>
-            </div>
+            <Link to="/products/products-page/:sofas">
+              <div className=" w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
+                <img className="mx-4" src={ProdSofa} />
+                <h1 className="text-show-brown text-2xl">Sofa</h1>
+              </div>
+            </Link>
+            {/*
+            to="/products/products-page/:closets"
+            to="/products/products-page/:tables"
+            to="/products/products-page/:racks"
+            */}
+
+            <Link to="/products/products-page/:beds">
+              <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
+                <img className="mx-4" src={ProdBed} />
+                <h1 className="text-show-brown text-2xl">Bed</h1>
+              </div>
+            </Link>
+
+            <Link>
+              <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
+                <img className="mx-4" src={ProdCloset} />
+                <h1 className="text-show-brown text-2xl">Closet</h1>
+              </div>
+            </Link>
+
+            <Link>
+              <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
+                <img className="mx-4" src={ProdTable} />
+                <h1 className="text-show-brown text-2xl">Table</h1>
+              </div>
+            </Link>
+
+            <Link>
+              <div className="lg:w-[100px] md:w-[100px] sm:w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer mt-4">
+                <img src={ProdRack} />
+                <h1 className="text-show-brown text-2xl">Rack</h1>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

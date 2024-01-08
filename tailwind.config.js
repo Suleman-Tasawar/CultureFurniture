@@ -24,7 +24,8 @@ export default {
       "green-neutral":"#6C9996",
       "border-grey":"#E0E0E0",
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }
