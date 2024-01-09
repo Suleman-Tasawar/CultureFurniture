@@ -3,22 +3,31 @@ import ProdShow from "../components/ProdShow";
 import { useParams } from "react-router-dom";
 
 function ProductPage() {
-  const [sofas, setSofas] = useState([]);
-
+  const [products, setProducts] = useState([]);
   const { type } = useParams();
+  const cleanedType = type.replace(":", "");
 
   useEffect(() => {
-    fetch(`/api/${type}`)
+    fetch(`/api/${cleanedType}`)
       .then((res) => res.json())
-      .then((data) => setSofas(data.sofas));
-  }, []);
+      .then((data) => {
+        console.log(data);
+        // checking the value of the useParam hook
+        if (cleanedType === "sofas") {
+          setProducts(data.sofas);
+        }
+        if (cleanedType === "beds") {
+          setProducts(data.beds);
+        }
+      });
+  }, [cleanedType]);
 
-  const showProducts = sofas.map((products) => (
+  const showProducts = products.map((product) => (
     <ProdShow
-      key={products.id}
-      ProdImg={products.imgUrl}
-      ProdTitle={products.name}
-      ProdPrice={products.itemPrice}
+      key={product.id}
+      ProdImg={product.imgUrl}
+      ProdTitle={product.name}
+      ProdPrice={product.itemPrice}
     />
   ));
 

@@ -4,17 +4,22 @@ import CartIcon from "/assets/shopping-cart.svg";
 
 function ProdShow({ ProdImg, ProdTitle, ProdPrice }) {
   return (
-    <div className="relative bg-[url('/assets/prod--bed3.png')] w-[300px] h-[400px] rounded-t-3xl">
+    <div className={`relative  w-[300px] h-[400px] rounded-t-3xl`}>
+      <img
+        className="w-full h-full rounded-t-3xl"
+        src={ProdImg}
+        alt="Images of Products"
+      />
       <div className="absolute bottom-0 w-full rounded-t-2xl  bg-white bg-opacity-75">
         <div className="flex justify-evenly  ">
-          <h3 className="text-show-brown">{ProdTitle}</h3>
+          <h3 className="text-show-brown font-bold">{ProdTitle}</h3>
           <button className="border-none">
             <img src={Like} />
           </button>
         </div>
-        <div className="flex justify-evenly ">
-          <h2 className="text-show-brown">{ProdPrice}</h2>
-          <button className="border-none bg-border-grey rounded-lg w-[60px] h-[25px]">
+        <div className="flex justify-evenly mt-2">
+          <h2 className="text-show-brown font-bold">{`Rs:${ProdPrice}`}</h2>
+          <button className="ml-5 border-none bg-border-grey rounded-lg w-[60px] h-[25px]">
             <img className="mx-auto" src={CartIcon} />
           </button>
         </div>
