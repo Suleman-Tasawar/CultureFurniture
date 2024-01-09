@@ -19,7 +19,7 @@ export default function NavBar() {
       <nav className="relative">
         <div
           onClick={() => setToggle(!toggle)}
-          className="cursor-pointer w-[30px] h-[30px] mt-6 lg:hidden md:hidden "
+          className="pt-2 cursor-pointer w-[30px] h-[30px] mt-3 lg:hidden md:hidden "
         >
           <img src={menu} />
         </div>

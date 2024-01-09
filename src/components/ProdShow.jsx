@@ -4,7 +4,9 @@ import CartIcon from "/assets/shopping-cart.svg";
 
 function ProdShow({ ProdImg, ProdTitle, ProdPrice }) {
   return (
-    <div className={`relative  w-[300px] h-[400px] rounded-t-3xl`}>
+    <div
+      className={`relative  w-[300px] h-[400px] rounded-t-3xl lg:mt-0 md:mt-5 sm:mt-5 cursor-pointer`}
+    >
       <img
         className="w-full h-full rounded-t-3xl"
         src={ProdImg}

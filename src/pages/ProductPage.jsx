@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 
 function ProductPage() {
   const [products, setProducts] = useState([]);
+
   const { type } = useParams();
   const cleanedType = type.replace(":", "");
 
@@ -32,7 +33,11 @@ function ProductPage() {
   ));
 
   return (
-    <main className="min-h-screen flex justify-between align-middle p-5 bg-green-neutral">
+    <main
+      className=" min-h-screen flex lg:flex-row md:flex-col sm:flex-col 
+    lg:justify-evenly md:justify-center sm:justify-center align-middle p-5
+     bg-primary mx-auto"
+    >
       {showProducts}
     </main>
   );

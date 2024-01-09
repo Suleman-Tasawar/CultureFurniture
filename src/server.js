@@ -26,6 +26,8 @@ createServer({
       imgUrl: "/assets/prod--chairM3.png",
       itemPrice: "43000",
     });
+
+    
     server.create("bed", {
       id: 1,
       name: "Bed 1",
