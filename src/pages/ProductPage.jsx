@@ -6,19 +6,30 @@ function ProductPage() {
   const [products, setProducts] = useState([]);
 
   const { type } = useParams();
+
   const cleanedType = type.replace(":", "");
 
   useEffect(() => {
     fetch(`/api/${cleanedType}`)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         // checking the value of the useParam hook
         if (cleanedType === "sofas") {
           setProducts(data.sofas);
         }
         if (cleanedType === "beds") {
           setProducts(data.beds);
+        }
+        if (cleanedType === "tables") {
+          setProducts(data.tables);
+        }
+
+        if (cleanedType === "closets") {
+          setProducts(data.closets);
+        }
+
+        if (cleanedType === "racks") {
+          setProducts(data.racks);
         }
       });
   }, [cleanedType]);
@@ -34,9 +45,8 @@ function ProductPage() {
 
   return (
     <main
-      className=" min-h-screen flex lg:flex-row md:flex-col sm:flex-col 
-    lg:justify-evenly md:justify-center sm:justify-center align-middle p-5
-     bg-primary mx-auto"
+      className="min-h-screen p-5 bg-primary mx-auto
+     grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 place-items-center gap-4"
     >
       {showProducts}
     </main>

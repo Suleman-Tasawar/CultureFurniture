@@ -27,8 +27,8 @@ export default function NavBar() {
           className={`${
             toggle ? "sm:block " : "sm:hidden "
           } sm:absolute md:static lg:static  md:flex lg:flex sm:top-14 sm:right-0 flex lg:flex-row 
-        md:flex-row sm:flex-col pt-2 sm:h-[300px] md:h-[40px]
-         lg:h-[40px] sm:w-[200px] md:w-[100%] lg:w-[100%] sm:bg-background sm:rounded-xl`}
+        md:flex-row sm:flex-col pt-2 sm:h-[100vh] md:h-[40px]
+         lg:h-[40px] sm:w-[300px] md:w-[100%] lg:w-[100%] sm:bg-background sm:rounded-xl`}
         >
           <li className=" cursor-pointer pl-5 sm:mt-5 sm:ml-8 md:mt-0 md:ml-0 lg:mt-0 lg:ml-0 ">
             <NavLink

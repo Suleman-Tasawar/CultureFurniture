@@ -16,7 +16,7 @@ export default function Products() {
       </div>
       <div className="flex lg:flex-row-reverse md:flex-col sm:flex-col justify-center align-middle">
         <div className="ml-12 w-[10%] text-center">
-          <h1 className="mt-22 text-6xl text-show-brown lg:rotate-90">
+          <h1 className="font-serif mt-22 text-6xl text-show-brown lg:rotate-90">
             Categories
           </h1>
         </div>
@@ -29,11 +29,6 @@ export default function Products() {
                 <h1 className="text-show-brown text-2xl">Sofa</h1>
               </div>
             </Link>
-            {/*
-            to="/products/products-page/:closets"
-            to="/products/products-page/:tables"
-            to="/products/products-page/:racks"
-            */}
 
             <Link to="/products/products-page/:beds">
               <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
@@ -42,21 +37,21 @@ export default function Products() {
               </div>
             </Link>
 
-            <Link>
+            <Link to="/products/products-page/:closets">
               <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
                 <img className="mx-4" src={ProdCloset} />
                 <h1 className="text-show-brown text-2xl">Closet</h1>
               </div>
             </Link>
 
-            <Link>
+            <Link to="/products/products-page/:tables">
               <div className="w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer">
                 <img className="mx-4" src={ProdTable} />
                 <h1 className="text-show-brown text-2xl">Table</h1>
               </div>
             </Link>
 
-            <Link>
+            <Link to="/products/products-page/:racks">
               <div className="lg:w-[100px] md:w-[100px] sm:w-[100px] h-[100px] bg-white rounded-lg  cursor-pointer mt-4">
                 <img src={ProdRack} />
                 <h1 className="text-show-brown text-2xl">Rack</h1>

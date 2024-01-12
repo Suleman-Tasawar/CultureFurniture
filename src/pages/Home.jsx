@@ -36,7 +36,7 @@ export default function Home() {
           </button>
         </div>
 
-        <div className="absolute flex justify-center bottom-0 left-0 p-4 mt-7 bg-light-yellow w-[100%] h-[70px] rounded-lg">
+        <div className="absolute flex justify-center bottom-6 left-0 p-4  bg-light-yellow w-[100%] h-[70px] rounded-lg">
           <ul className="flex mx-auto">
             <li className="ml-8 cursor-pointer ">
               {" "}
