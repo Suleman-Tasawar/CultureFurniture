@@ -3,11 +3,10 @@ import ProdShow from "../components/ProdShow";
 import { useParams } from "react-router-dom";
 
 function ProductPage() {
-  const [products, setProducts] = useState([]);
-
   const { type } = useParams();
-
   const cleanedType = type.replace(":", "");
+  const [products, setProducts] = useState([]);
+  const [category] = useState(cleanedType);
 
   useEffect(() => {
     fetch(`/api/${cleanedType}`)
@@ -37,6 +36,8 @@ function ProductPage() {
   const showProducts = products.map((product) => (
     <ProdShow
       key={product.id}
+      category={category}
+      ProdId={product.id}
       ProdImg={product.imgUrl}
       ProdTitle={product.name}
       ProdPrice={product.itemPrice}
@@ -46,7 +47,7 @@ function ProductPage() {
   return (
     <main
       className="min-h-screen p-5 bg-primary mx-auto
-     grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 place-items-center gap-4"
+     grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 place-items-center gap-4"
     >
       {showProducts}
     </main>

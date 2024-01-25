@@ -23,6 +23,9 @@ export default {
       "button-background": "#b3d6cd",
       "green-neutral":"#6C9996",
       "border-grey":"#E0E0E0",
+      "blue":" #0000FF",
+      "black":"#000",
+      "white":"#FAFAFA",
     },
     extend: {
     },
