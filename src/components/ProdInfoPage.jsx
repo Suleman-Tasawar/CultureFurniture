@@ -6,6 +6,7 @@ import Like from "/assets/like.svg";
 function ProdInfoPage() {
   const [itemsCount, setItemsCount] = useState(0);
   const [product, setProduct] = useState([]);
+  const [loading, setLoading] = useState(false);
   const { id, category } = useParams();
   const prodId = id.replace(":", "");
   const ProdCategory = category.replace(":", "");
@@ -26,6 +27,9 @@ function ProdInfoPage() {
           (prod) => prod.id === prodId
         );
         setProduct(filteredProd);
+        setTimeout(() => {
+          setLoading(true);
+        }, 2000);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -39,19 +43,23 @@ function ProdInfoPage() {
   ));
 
   return (
-    <section className="max-h-fit bg-primary">
+    <section className="bg-primary lg:h-[100vh] md:auto sm:auto">
       <header>
         <Navigate />
       </header>
-      {product ? (
+      {product && loading ? (
         <main
-          className="mx-auto w-[90%] h-[100%]  border-[1px] rounded-lg flex
+          className="mx-auto w-[90%] h-auto  border-[1px] rounded-lg flex
          lg:flex-row md:flex-col sm:flex-col lg:justify-evenly
-          md:justify-center sm:justify-center align-middle  bg-green-neutral 
-          md:text-center sm:text-center px-5"
+          md:justify-center sm:justify-center sm:mx-auto align-middle  bg-green-neutral 
+          md:text-center sm:text-center lg:text-left p-5 mt-3 font-serif"
         >
           <div>
-            <img src={product.imgUrl} alt="hdfhd" />
+            <img
+              className="w-[300px] rounded-md"
+              src={product.imgUrl}
+              alt="hdfhd"
+            />
           </div>
           <div className="lg:w-[40%] md:w-[60%] sm:w-[70%] pt-5 flex flex-col justify-center align-middle ">
             <div className="flex justify-evenly align-middle">
@@ -110,7 +118,9 @@ function ProdInfoPage() {
           </div>
         </main>
       ) : (
-        <h2>No data</h2>
+        <h1 className="tex-3xl font-serif font-bold text-white text-center">
+          Please wait we are loading your data 😊
+        </h1>
       )}
     </section>
   );

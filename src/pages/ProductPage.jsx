@@ -6,6 +6,7 @@ function ProductPage() {
   const { type } = useParams();
   const cleanedType = type.replace(":", "");
   const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [category] = useState(cleanedType);
 
   useEffect(() => {
@@ -15,20 +16,31 @@ function ProductPage() {
         // checking the value of the useParam hook
         if (cleanedType === "sofas") {
           setProducts(data.sofas);
-        }
-        if (cleanedType === "beds") {
+          setTimeout(() => {
+            setLoading(true);
+          }, 2000);
+        } else if (cleanedType === "beds") {
           setProducts(data.beds);
-        }
-        if (cleanedType === "tables") {
+          setTimeout(() => {
+            setLoading(true);
+          }, 2000);
+        } else if (cleanedType === "tables") {
           setProducts(data.tables);
-        }
-
-        if (cleanedType === "closets") {
+          setTimeout(() => {
+            setLoading(true);
+          }, 2000);
+        } else if (cleanedType === "closets") {
           setProducts(data.closets);
-        }
-
-        if (cleanedType === "racks") {
+          setTimeout(() => {
+            setLoading(true);
+          }, 2000);
+        } else if (cleanedType === "racks") {
           setProducts(data.racks);
+          setTimeout(() => {
+            setLoading(true);
+          }, 2000);
+        } else {
+          throw Error("Cant find the thing you are looking for");
         }
       });
   }, [cleanedType]);
@@ -49,7 +61,13 @@ function ProductPage() {
       className="min-h-screen p-5 bg-primary mx-auto
      grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 place-items-center gap-4"
     >
-      {showProducts}
+      {loading ? (
+        showProducts
+      ) : (
+        <h1 className="tex-3xl font-serif font-bold text-white text-center">
+          Please wait we are loading your data 😊
+        </h1>
+      )}
     </main>
   );
 }
