@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import CartIcon from "/assets/shopping-cart.svg";
 import logo from "/assets/logo.svg";
 import menu from "/assets/icon-hamburger.svg";
+import Cart from "./Cart";
 
 export default function NavBar() {
   const stylesActive = {
     borderBottom: "2px solid #FAFAFA",
   };
   const [toggle, setToggle] = useState(false);
+
+  const [toggleCart, setToggleCart] = useState(false);
 
   return (
     <header className="flex flex-row justify-between align-middle bg-background text-grey">
@@ -53,6 +57,14 @@ export default function NavBar() {
             >
               About
             </NavLink>
+          </li>
+
+          <li
+            className="relative ml-3 mr-5 mt-1 cursor-pointer"
+            onClick={() => setToggleCart(!toggleCart)}
+          >
+            <img src={CartIcon} alt="Cart" />
+            {!toggleCart && <Cart />}
           </li>
         </ul>
       </nav>
