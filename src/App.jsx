@@ -10,25 +10,34 @@ import NavigateLayout from "./components/NavigateLayout";
 import About from "./pages/About";
 import Notify from "./pages/Notify";
 import Contact from "./pages/Contact";
+import Checkout from "./pages/Checkout";
 import NotFound from "./pages/NotFound";
+import { ShoppingProvider } from "./ShoppingContex"; // Import the context provider
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<NavigateLayout />}>
-            <Route index element={<Products />} />
-            <Route path="products-page/:type" element={<ProductPage />} />
+      {/* Wrap the routes with MyContextProvider */}
+      <ShoppingProvider>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<NavigateLayout />}>
+              <Route index element={<Products />} />
+              <Route path="products-page/:type" element={<ProductPage />} />
+            </Route>
+            <Route
+              path="details-page/:id/:category"
+              element={<ProdInfoPage />}
+            />
+            <Route path="checkout" element={<Checkout />} />
+            <Route path="about" element={<About />} />
+            <Route path="notify" element={<Notify />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
-          <Route path="details-page/:id/:category" element={<ProdInfoPage />} />
-          <Route path="about" element={<About />} />
-          <Route path="notify" element={<Notify />} />
-          <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
+        </Routes>
+      </ShoppingProvider>
     </div>
   );
 }

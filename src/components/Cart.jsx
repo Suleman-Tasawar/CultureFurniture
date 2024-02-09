@@ -1,18 +1,32 @@
 import React, { useContext } from "react";
-import { MyContext } from "./MyContext";
+import { redirect } from "react-router-dom";
+import { ShoppingContext } from "../ShoppingContex";
+import uniqid from "uniqid";
 
 function Cart() {
-  const { selectedProduct, setSelectedProduct } = useContext(MyContext);
+  const { cartItems } = useContext(ShoppingContext);
 
-  console.log(selectedProduct);
+  const renderedProducts = cartItems.map((product) => (
+    <div key={uniqid()} className="mt-3">
+      <img className="w-10 h-10 rounded-sm" src={product.imgUrl} />
+      <h3>{product.name}</h3>za
+      <h4>{product.itemPrice}</h4>
+    </div>
+  ));
 
+  function navigateToCheckout() {
+    return redirect("/checkout");
+  }
   return (
-    <div className="absolute top-10 right-0 bg-white text-black w-[200px] h-[100%]">
-      {selectedProduct ? (
-        <h1>{selectedProduct[0].name}</h1>
-      ) : (
-        <h3>No Item in the cart</h3>
-      )}
+    <div className="absolute top-9 right-0 rounded-md bg-light-yellow text-white text-center w-[200px] h-auto">
+      {renderedProducts}
+
+      <button
+        onClick={navigateToCheckout}
+        className="mt-3 w-20 h-10 rounded-md bg-dark-brown hover:bg-show-brown text-white"
+      >
+        Checkout
+      </button>
     </div>
   );
 }
