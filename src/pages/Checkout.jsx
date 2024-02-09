@@ -18,7 +18,7 @@ function Checkout() {
   ));
 
   return (
-    <div className="bg-primary h-[100vh] w-full flex justify-evenly align-middle items-center px-3">
+    <div className="bg-primary h-[100vh] w-full flex lg:flex-row md:flex-row sm:flex-col  justify-evenly items-center px-3 lg:pt-0 md:pt-20 sm:pt-20">
       <div className="lg:w-[60%] md:w-[70%] sm:w-[80%] bg-primary">
         <h1 className="mt-3 text-5xl font-bold font-serif text-white">
           Checkout Page
