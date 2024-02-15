@@ -1,22 +1,27 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Phone from "/assets/phone.svg";
 import Mail from "/assets/mail.svg";
 
 function Contact() {
-  const [form, setForm] = useState({
-    name: "",
-    phoneNo: "",
-    email: "",
-    reason: "",
-  });
+  const formD = useRef();
 
-  function handleForm(event) {
-    setForm((prevData) => ({
-      ...prevData,
-      [event.target.name]: event.target.value,
-    }));
-  }
-  console.log(form);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_bt2vgoj", "template_2qoinnd", formD.current, {
+        publicKey: "Kul8DNTM4QoPR2fhL",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section className="bg-green-neutral h-[100vh] flex justify-center">
       <div className="mt-10  flex lg:flex-row md:flex-col sm:flex-col justify-between align-middle bg-white w-[90%] h-fit  rounded-2xl">
@@ -29,14 +34,13 @@ function Contact() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </p>
 
-          <form>
+          <form ref={formD} onSubmit={sendEmail}>
             <div className="mt-3 border-border-grey border-[1px] bg-white rounded-full">
               <input
                 className="border-none outline-none w-full h-[40px]"
                 type="text"
-                name="name"
+                name="customer name"
                 placeholder="Name"
-                onChange={handleForm}
               />
             </div>
 
@@ -44,9 +48,8 @@ function Contact() {
               <input
                 className="border-none outline-none w-full h-[40px]"
                 type="email"
-                name="email"
+                name="user_email"
                 placeholder="Email"
-                onChange={handleForm}
               />
             </div>
 
@@ -54,17 +57,15 @@ function Contact() {
               <input
                 className="border-none outline-none w-full h-[40px] "
                 type="tel"
-                name="phoneNo"
+                name="user_phoneNo"
                 placeholder="Phone Number"
-                onChange={handleForm}
               />
             </div>
 
             <div className="  mt-3 w-full h-[40px] border-border-grey border-[1px] bg-white rounded-full">
               <select
-                name="reason"
+                name="user_reason"
                 className="border-none outline-none w-full h-[40px]"
-                onChange={handleForm}
               >
                 <option value="How did you find us">How did you find us</option>
                 <option value="Through Social Media">
@@ -75,8 +76,15 @@ function Contact() {
               </select>
             </div>
 
+            <div className=" mt-3 w-full border-border-grey border-[1px] bg-white rounded-full">
+              <textarea name="message" placeholder="Type your message here" />
+            </div>
+
             <div className="mt-4">
-              <button className="w-full h-[40px] bg-light-yellow text-white">
+              <button
+                type="submit"
+                className="w-full h-[40px] bg-light-yellow hover:bg-neutral-yellow text-white"
+              >
                 Send
               </button>
             </div>

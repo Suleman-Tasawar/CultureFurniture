@@ -11,7 +11,7 @@ import About from "./pages/About";
 import Notify from "./pages/Notify";
 import Contact from "./pages/Contact";
 import Checkout from "./pages/Checkout";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/404";
 import { ShoppingProvider } from "./ShoppingContex"; // Import the context provider
 
 function App() {
