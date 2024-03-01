@@ -10,7 +10,7 @@ import ProdRack from "/assets/prod--rack.svg";
 
 export default function Products() {
   return (
-    <section className="pt-12 flex lg:flex-row md:flex-col sm:flex-col justify-center align-middle bg-primary lg:h-auto md:h-full sm:h-full mb-10">
+    <section className="pt-12 flex lg:flex-row md:flex-col sm:flex-col justify-center align-middle bg-primary lg:h-[100vh] md:h-full sm:h-full mb-10">
       <div className=" lg:w-[40%] md:w-[50%] sm:w-[60%] sm:mx-auto">
         <img src={ProdImg} alt="Product Page" />
       </div>
