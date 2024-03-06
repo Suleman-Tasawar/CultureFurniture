@@ -59,20 +59,10 @@ export default function NavBar() {
             </NavLink>
           </li>
 
-          <li className="cursor-pointer pl-5 sm:mt-5 sm:ml-8 pr-2 md:mt-0 md:ml-0 lg:mt-0 lg:ml-0">
-            <NavLink
-              to="/checkout"
-              style={({ isActive }) => (isActive ? stylesActive : null)}
-            >
-              Checkout
-            </NavLink>
-          </li>
-
-          <li
-            className="relative ml-3 mr-5 mt-1 cursor-pointer"
-            onClick={() => setToggleCart(!toggleCart)}
-          >
-            <img src={CartIcon} alt="Cart" />
+          <li className="relative ml-3 mr-5 mt-1 cursor-pointer">
+            <button onClick={() => setToggleCart(!toggleCart)}>
+              <img src={CartIcon} alt="Cart" />
+            </button>
             {toggleCart && <Cart />}
           </li>
         </ul>

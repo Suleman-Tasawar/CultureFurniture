@@ -64,7 +64,7 @@ function ProductPage() {
       {loading ? (
         showProducts
       ) : (
-        <h1 className="tex-3xl font-serif font-bold text-white text-center">
+        <h1 className="text-3xl font-serif font-bold text-white text-center">
           Please wait we are loading your data 😊
         </h1>
       )}

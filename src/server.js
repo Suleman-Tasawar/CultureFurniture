@@ -13,43 +13,43 @@ createServer({
     // Creating seed data for sofas
     server.create("sofa", {
       id: uniqid(),
-      name: "Pakistani Heritage Sofa",
+      name: " Heritage Sofa",
       imgUrl: "/assets/prod--chairM.png",
-      itemPrice: "80000",
-      discPrice: "50000",
+      itemPrice: "8000",
+      discPrice: "5000",
       likes: 4,
       colors: ["blue", "black", "white"],
-      details: "Immerse yourself in Pakistani heritage with this beautifully crafted sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Immerse yourself in  heritage with this beautifully crafted sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("sofa", {
       id: uniqid(),
-      name: "Pakistani Elegance Leather Sofa",
+      name: " Elegance Leather Sofa",
       imgUrl: "/assets/prod--chairM2.png",
       itemPrice: "120000",
-      discPrice: "80000",
+      discPrice: "8000",
       likes: 3,
       colors: ["brown", "maroon", "cream"],
-      details: "Experience the elegance of Pakistani design with this luxurious leather sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Experience the elegance of  design with this luxurious leather sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("sofa", {
       id: uniqid(),
-      name: "Contemporary Pakistani Lounge",
+      name: "Contemporary  Lounge",
       imgUrl: "/assets/prod--chairM3.png",
       itemPrice: "150000",
       discPrice: "120000",
       likes: 5,
       colors: ["green", "gold", "teal"],
-      details: "Enjoy modern comfort with a touch of Pakistani flair in this lounge sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Enjoy modern comfort with a touch of  flair in this lounge sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("sofa", {
       id: uniqid(),
       name: "Traditional Charm Sofa",
       imgUrl: "/assets/prod--chairM4.jpg",
-      itemPrice: "100000",
-      discPrice: "70000",
+      itemPrice: "10000",
+      discPrice: "7000",
       likes: 2,
       colors: ["blue", "black", "white"],
       details: "Bring traditional charm to your living room with this exquisite sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
@@ -57,189 +57,189 @@ createServer({
     
     server.create("sofa", {
       id: uniqid(),
-      name: "Pakistani Grace Sofa",
+      name: " Grace Sofa",
       imgUrl: "/assets/prod--chairM5.jpg",
-      itemPrice: "110000",
-      discPrice: "90000",
+      itemPrice: "11000",
+      discPrice: "9000",
       likes: 1,
       colors: ["blue", "black", "white"],
-      details: "Experience the grace of Pakistani craftsmanship with this stylish sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Experience the grace of  craftsmanship with this stylish sofa. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("sofa", {
       id: uniqid(),
-      name: "Pakistani Comfort Sofa",
+      name: " Comfort Sofa",
       imgUrl: "/assets/prod--chairM6.jpg",
-      itemPrice: "95000",
-      discPrice: "75000",
+      itemPrice: "9500",
+      discPrice: "7500",
       likes: 4,
       colors: ["blue", "black", "white"],
-      details: "Indulge in comfort with this Pakistani-inspired sofa designed for relaxation. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Indulge in comfort with this -inspired sofa designed for relaxation. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("bed", {
       id: uniqid(),
-      name: "Pakistani Royal Bed",
+      name: " Royal Bed",
       imgUrl: "/assets/prod--bed1.png",
-      itemPrice: "200000",
-      discPrice: "150000",
+      itemPrice: "20000",
+      discPrice: "15000",
       likes: 3,
       colors: ["blue", "black", "white"],
-      details: "Sleep like royalty with this Pakistani-themed royal bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Sleep like royalty with this -themed royal bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("bed", {
       id: uniqid(),
-      name: "Luxury Pakistani Bed",
+      name: "Luxury  Bed",
       imgUrl: "/assets/prod--bed2.png",
-      itemPrice: "180000",
-      discPrice: "130000",
+      itemPrice: "18000",
+      discPrice: "13000",
       likes: 2,
       colors: ["blue", "black", "white"],
-      details: "Experience luxury and style with this elegant Pakistani-inspired bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Experience luxury and style with this elegant -inspired bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("bed", {
       id: uniqid(),
-      name: "Modern Pakistani Bed",
+      name: "Modern  Bed",
       imgUrl: "/assets/prod--bed3.png",
       itemPrice: "160000",
       discPrice: "120000",
       likes: 5,
       colors: ["blue", "black", "white"],
-      details: "Infuse modern design into your bedroom with this contemporary Pakistani bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Infuse modern design into your bedroom with this contemporary  bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("bed", {
       id: uniqid(),
-      name: "Classic Pakistani Bed",
+      name: "Classic  Bed",
       imgUrl: "/assets/prod--bed4.jpg",
       itemPrice: "220000",
       discPrice: "170000",
       likes: 1,
       colors: ["blue", "black", "white"],
-      details: "Bring classic elegance to your bedroom with this Pakistani-themed bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Bring classic elegance to your bedroom with this -themed bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("bed", {
       id: uniqid(),
-      name: "Pakistani Dream Bed",
+      name: " Dream Bed",
       imgUrl: "/assets/prod--bed5.jpg",
       itemPrice: "190000",
       discPrice: "140000",
       likes: 4,
       colors: ["blue", "black", "white"],
-      details: "Experience a dreamy sleep with this beautifully designed Pakistani bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Experience a dreamy sleep with this beautifully designed  bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("bed", {
       id: uniqid(),
-      name: "Pakistani Harmony Bed",
+      name: " Harmony Bed",
       imgUrl: "/assets/prod--bed6.jpg",
       itemPrice: "210000",
       discPrice: "160000",
       likes: 3,
       colors: ["blue", "black", "white"],
-      details: "Find harmony in your bedroom with this Pakistani-themed bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Find harmony in your bedroom with this -themed bed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("table", {
       id: uniqid(),
-      name: "Pakistani Elegance Table",
+      name: " Elegance Table",
       imgUrl: "/assets/prod--table2.jpg",
       itemPrice: "35000",
       discPrice: "25000",
       likes: 4,
       colors: ["blue", "black", "white"],
-      details: "Add elegance to your living space with this Pakistani-inspired table. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Add elegance to your living space with this -inspired table. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("table", {
       id: uniqid(),
-      name: "Modern Pakistani Table",
+      name: "Modern  Table",
       imgUrl: "/assets/prod--table3.jpg",
       itemPrice: "37000",
       discPrice: "27000",
       likes: 2,
       colors: ["blue", "black", "white"],
-      details: "Infuse modern style into your home with this contemporary Pakistani table. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Infuse modern style into your home with this contemporary  table. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("table", {
       id: uniqid(),
-      name: "Pakistani Classic Table",
+      name: " Classic Table",
       imgUrl: "/assets/prod--table4.jpg",
       itemPrice: "30000",
       discPrice: "20000",
       likes: 1,
       colors: ["blue", "black", "white"],
-      details: "Bring classic charm to your home with this Pakistani-themed classic table. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Bring classic charm to your home with this -themed classic table. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("closet", {
       id: uniqid(),
-      name: "Pakistani Royale Closet",
+      name: " Royale Closet",
       imgUrl: "/assets/prod--closet1.jpg",
       itemPrice: "70000",
       discPrice: "60000",
       likes: 3,
       colors: ["blue", "black", "white"],
-      details: "Organize your belongings in style with this luxurious Pakistani-themed closet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Organize your belongings in style with this luxurious -themed closet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("closet", {
       id: uniqid(),
-      name: "Pakistani Contemporary Closet",
+      name: " Contemporary Closet",
       imgUrl: "/assets/prod--closet2.jpg",
       itemPrice: "45000",
       discPrice: "35000",
       likes: 5,
       colors: ["blue", "black", "white"],
-      details: "Experience contemporary organization with this stylish Pakistani closet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Experience contemporary organization with this stylish  closet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("closet", {
       id: uniqid(),
-      name: "Pakistani Classic Closet",
+      name: " Classic Closet",
       imgUrl: "/assets/prod--closet3.jpg",
       itemPrice: "35000",
       discPrice: "25000",
       likes: 2,
       colors: ["blue", "black", "white"],
-      details: "Bring classic elegance to your space with this Pakistani-themed classic closet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Bring classic elegance to your space with this -themed classic closet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("rack", {
       id: uniqid(),
-      name: "Pakistani Vintage Rack",
+      name: " Vintage Rack",
       imgUrl: "/assets/prod--rack1.jpg",
-      itemPrice: "20000",
-      discPrice: "15000",
+      itemPrice: "2000",
+      discPrice: "1500",
       likes: 4,
       colors: ["blue", "black", "white"],
-      details: "Add a touch of vintage charm to your space with this Pakistani-themed rack. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Add a touch of vintage charm to your space with this -themed rack. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("rack", {
       id: uniqid(),
-      name: "Pakistani Modern Rack",
+      name: " Modern Rack",
       imgUrl: "/assets/prod--rack2.jpg",
-      itemPrice: "23000",
-      discPrice: "18000",
+      itemPrice: "2300",
+      discPrice: "1800",
       likes: 3,
       colors: ["blue", "black", "white"],
-      details: "Organize with modern flair using this stylish Pakistani-inspired rack. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Organize with modern flair using this stylish -inspired rack. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
     server.create("rack", {
       id: uniqid(),
-      name: "Pakistani Chic Rack",
+      name: " Chic Rack",
       imgUrl: "/assets/prod--rack3.jpg",
-      itemPrice: "45000",
-      discPrice: "35000",
+      itemPrice: "4500",
+      discPrice: "3500",
       likes: 1,
       colors: ["blue", "black", "white"],
-      details: "Stay organized in style with this chic Pakistani-themed rack. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
+      details: "Stay organized in style with this chic -themed rack. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi architecto optio quibusdam consequatur voluptatem exercitationem sapiente laudantium tempora corrupti atque."
     });
     
   },

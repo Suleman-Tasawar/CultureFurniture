@@ -47,8 +47,13 @@ function ProdInfoPage() {
   ));
 
   function handleAddToCart() {
-    setSelectedProduct(product);
-    addToCart(selectedProduct);
+    try{
+      setSelectedProduct(product);
+      addToCart(selectedProduct,itemsCount);
+    }
+    catch(e){
+      throw(e)
+    }
   }
 
   return (

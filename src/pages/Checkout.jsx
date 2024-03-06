@@ -11,9 +11,9 @@ function Checkout() {
       key={product.id}
       className="mt-3 flex justify-evenly text-white text-center font-serif font-bold"
     >
-      <img className="w-12 h-12 rounded-sm" src={product.imgUrl} />
-      <h3 className="text-lg ml-3">{product.name}</h3>
-      <h3 className="text-lg ml-3">{product.itemPrice}</h3>
+      <img className="w-12 h-12 rounded-sm" src={product.item.imgUrl} />
+      <h3 className="text-lg ml-3">{product.item.name}</h3>
+      <h4 className="font-serif text-lg ml-3">Rs:{`${product.item.itemPrice} x ${product.itemCount} = ${product.item.itemPrice*product.itemCount}`}</h4>
     </div>
   ));
 

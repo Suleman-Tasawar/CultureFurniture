@@ -5,9 +5,12 @@ export const ShoppingContext = createContext();
 
 export const ShoppingProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
-
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
+  /*
+  Only added this
+  ,{itemCount:items,item}
+  */
+  const addToCart = (itemCart,items) => {
+    setCartItems([...cartItems,{itemCount:items,item:itemCart}]);
   };
 
   return (
